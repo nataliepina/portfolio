@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Natalie Pina | Web Developer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="img/logo_purple.png" alt="">
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#services" class="nav__link">My Skills</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      Hi, I am <strong>Natalie</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+    <img src="img/bw.jpg" alt="a self portrait of natalie" class="intro__img">
+  </section>
+
+  <section class="my-services" id="services">
+    <h2 class="section__title section__title--services">What I do</h2>
+    <div class="services">
+      <div class="service">
+        <h3 class="">HTML/CSS</h3>
+        <p>Up-to-date markup with HTML5 features. CSS3 and CSS preprocessors. Avid Flexbox and Grid user. Mobile first + responsiveness. Cross browser development.</p>
+      </div>
+
+      <div class="service">
+        <h3 class="">JavaScript</h3>
+        <p>Fundamentals and core concepts. The good parts and the weird parts. Functional and OOP JavaScript. Frameworks such as React. Node as a package manager. Interacting with RESTful APIs.</p>
+      </div>
+
+      <div class="service">
+        <h3 class="">Web Development</h3>
+        <p>Creative designs. Responsive UI. Acessability in mind. Optimized for speed. WordPress and other CMS. Shopify and eCommerce experience. Git and version control systems. Testing and debugging.</p>
+      </div>
+    </div>
+    <a href="#work" class="btn">My Work</a>
+  </section>
+
+  <section class="about-me" id="about">
+    <h2 class="section__title section__title--about">Who I am</h2>
+    <p class="section__subtitle section__subtitle--about">Web Developer based out of Nashville</p>
+
+    <div class="about-me__body">
+      <p>From photography to programming. I am a fluent visual communicator. I love being able to grow with the ever-evolving tech industry. I do my best follow the latest trends while continually solidifying the fundamentals. Crafting aesthetically pleasing designs that are responsive and intuitive is my goal.</p>
+      <p>When I'm not programming, I enjoy photography, comedy podcasts, spicy food, baking, traveling, video games, trivia nights and going to the gym. </p>
+    </div>
+
+    <img src="img/flowers.jpg" alt="natalie in front of flowers" class="about-me__img">
+  </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">Projects</h2>
+      <p class="section__subtitle section__subtitle--work">A selection of my projects</p>
+      
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+            <img src="img/portfolio-realestate.jpg" alt="" class="portfolio__img">
+        </a>
+
+        <a href="portfolio-item-2.html" class="portfolio__item">
+            <img src="img/portfolio-recipe.jpg" alt="" class="portfolio__img">
+        </a>
+        
+        <a href="https://www.itnholdings.com/" class="portfolio__item">
+            <img src="img/portfolio-ITN.jpg" alt="" class="portfolio__img">
+        </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <a href="mailto:natalie.a.pina@gmail.com" class="footer__link">natalie.a.pina@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a href="https://github.com/nataliepina" class="social-list__link">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a href="https://www.instagram.com/nataliepinaphoto/" class="social-list__link">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a href="#" class="social-list__link">
+          <i class="fab fa-codepen"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a href="https://www.linkedin.com/in/nataliepina" class="social-list__link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
