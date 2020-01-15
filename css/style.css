@@ -243,6 +243,7 @@ h3 { font-size: var(--fs-h3)!important }
 
 .section__subtitle--intro {
   display: inline-block;
+  text-transform: uppercase;
 }
 
 @media (min-width: 600px) {
