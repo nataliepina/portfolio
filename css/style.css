@@ -133,7 +133,7 @@ h3 { font-size: var(--fs-h3)!important }
 .nav__link {
   color: inherit;
   font-weight: var(--fw-bold);
-  font-size: var(--fs-h2);
+  font-size: 2rem;
   text-decoration: none;
 }
 
@@ -273,6 +273,13 @@ h3 { font-size: var(--fs-h3)!important }
     position: relative;
     left: -1.5em;
     width: calc(100% + 1.5em);
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 800px) {
+  .section__subtitle--intro {
+    font-size: var(--fs-body);
   }
 }
 
