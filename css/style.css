@@ -74,6 +74,7 @@ strong { font-weight: var(--fw-bold)!important }
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
+  border-radius: 2px;
 }
 
 .btn:hover {
@@ -223,6 +224,7 @@ h3 { font-size: var(--fs-h3)!important }
   padding: .25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
+  border-radius: 2px;
 }
 
 .section__subtitle--work {
@@ -239,6 +241,7 @@ h3 { font-size: var(--fs-h3)!important }
 
 .intro__img {
   box-shadow: var(--bs);
+  border-radius: 2px;
 }
 
 .section__subtitle--intro {
@@ -263,6 +266,7 @@ h3 { font-size: var(--fs-h3)!important }
     min-width: 250px;
     position: relative;
     z-index: 2;
+    border-radius: 2px;
   }    
   
   .section__subtitle--intro {
@@ -339,6 +343,8 @@ h3 { font-size: var(--fs-h3)!important }
 .about-me__img {
   box-shadow: var(--bs);
   filter: grayscale(100%);
+  border-radius: 2px;
+
 }
 
 @media (min-width: 600px) {
@@ -428,6 +434,10 @@ h3 { font-size: var(--fs-h3)!important }
   text-align: center;
   padding: 2.5em 0;
   font-size: var(--fs-h3);
+}
+
+.footer__email {
+  font-size: 20px;
 }
 
 .footer a { 
