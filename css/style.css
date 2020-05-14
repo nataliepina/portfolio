@@ -13,7 +13,7 @@
   --clr-light: #fff;
   --clr-med: #d3d3d3;
   --clr-dark: #303030;
-  --clr-accent: #9f89c9;
+  --clr-accent: #967fc2;
     
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -486,4 +486,16 @@ h3 { font-size: var(--fs-h3)!important }
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Accessibility */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
