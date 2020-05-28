@@ -10,9 +10,9 @@
   --fw-reg: 300;
   --fw-bold: 900;
 
-  --clr-light: #fff;
+  --clr-light: #FCFCFC;
   --clr-med: #d3d3d3;
-  --clr-dark: #303030;
+  --clr-dark: #121113;
   --clr-accent: #a48dc9;
     
   --fs-h1: 3rem;
@@ -103,12 +103,17 @@ h3 { font-size: var(--fs-h3)!important }
 }
 
 .logo {
-  max-width: 220px;
+  margin-top: -10px;
+  width: 55px;
+  height: 55px;
 }
 
 .nav {
   position: fixed;
-  background: var(--clr-dark);
+  background-color: var(--clr-dark);
+  background-image: url(../img/leaves.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
   color: var(--clr-light);
   top: 0;
   bottom: 0;
@@ -227,6 +232,30 @@ h3 { font-size: var(--fs-h3)!important }
   border-radius: 2px;
 }
 
+/* Who I Am Animations */
+.section__subtitle.section__subtitle--about span{
+  display: block;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .08em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--ff-secondary) }
+}
+
 .section__subtitle--work {
   color: var(--clr-accent);
   font-weight: var(--fw-bold);
@@ -242,6 +271,10 @@ h3 { font-size: var(--fs-h3)!important }
 .intro__img {
   box-shadow: var(--bs);
   border-radius: 2px;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  filter: grayscale(100%);
 }
 
 .section__subtitle--intro {
@@ -344,7 +377,6 @@ h3 { font-size: var(--fs-h3)!important }
   box-shadow: var(--bs);
   filter: grayscale(100%);
   border-radius: 2px;
-
 }
 
 @media (min-width: 600px) {
@@ -390,6 +422,7 @@ h3 { font-size: var(--fs-h3)!important }
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
 }
 
 .portfolio__item {
@@ -429,15 +462,15 @@ h3 { font-size: var(--fs-h3)!important }
 /* Footer */
 
 .footer {
-  background: #111;
-  color: var(--clr-accent);
+  background: linear-gradient(180deg, rgba(18,17,19,1) 4%, rgba(164,141,201,1) 92%);
   text-align: center;
-  padding: 2.5em 0;
+  padding: 6em 0 0 0;
   font-size: var(--fs-h3);
+  color: var(--clr-dark);
 }
 
 .footer__email {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .footer a { 
@@ -451,7 +484,7 @@ h3 { font-size: var(--fs-h3)!important }
 
 .footer__link:hover,
 .social-list__link:hover {
-  opacity: .7;
+  opacity: .6;
 }
 
 .footer__link:hover {
@@ -462,7 +495,7 @@ h3 { font-size: var(--fs-h3)!important }
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 2em 0 0;
+  margin: 1.5em 0 0;
   padding: 0;
 }
 
@@ -472,6 +505,10 @@ h3 { font-size: var(--fs-h3)!important }
 
 .social-list__link {
   padding: .5em;
+}
+
+.copyright {
+  font-size: 12px;
 }
 
 /* Portfolio Items */
@@ -499,3 +536,4 @@ h3 { font-size: var(--fs-h3)!important }
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
