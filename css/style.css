@@ -14,6 +14,8 @@
   --clr-med: #d3d3d3;
   --clr-dark: #121113;
   --clr-accent: #a48dc9;
+  --clr-accent2: #838EC9;
+  --clr-accent3: #C697C9;
     
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -497,9 +499,8 @@ h3 { font-size: var(--fs-h3)!important }
   font-weight: var(--fw-bold);
 }
 
-.footer__link:hover,
 .social-list__link:hover {
-  opacity: .6;
+  opacity: .8;
 }
 
 .footer__link:hover {
@@ -550,4 +551,18 @@ h3 { font-size: var(--fs-h3)!important }
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.underline--magical {
+  background-image: linear-gradient(120deg, var(--clr-accent2) 0%, var(--clr-accent3) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 70%;
+  transition: background-size 0.25s ease-in;
+  border-radius: 2px;
+  margin: .5px;
+}
+
+.underline--magical:hover {
+  background-size: 100% 88%;
 }
