@@ -555,16 +555,24 @@ h3 { font-size: var(--fs-h3)!important }
   border: 0;
 }
 
-.underline--magical {
-  background-image: linear-gradient(120deg, var(--clr-accent2) 0%, var(--clr-accent3) 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 70%;
-  transition: background-size 0.25s ease-in;
-  border-radius: 2px;
-  margin: .5px;
+/* Email Address Animation  */
+
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 1em;
 }
 
-.underline--magical:hover {
-  background-size: 100% 88%;
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
