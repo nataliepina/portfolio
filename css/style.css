@@ -48,6 +48,30 @@ body {
   line-height: 1.6;
 }
 
+.dark-mode {
+  background-color: black;
+  color: white;
+
+  --clr-accent: #664e8d;
+}
+
+.dark-mode-container {
+  display: flex;
+  flex-flow: row-reverse;
+}
+
+.dark-mode-btn {
+  border: none;
+  background: transparent;
+  color: black;
+  padding: 0 1.5em;
+}
+
+/* .dark-mode-btn:hover {
+  
+} */
+
+
 section {
   padding: 3em 3em 6em;
 }

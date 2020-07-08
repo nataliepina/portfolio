@@ -29,3 +29,12 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+
+
+// Dark mode
+
+function darkMode() {
+  const element = document.body;
+  element.classList.toggle("dark-mode");
+  //const btn = document.getElementsByClassName(".dark-mode-btn");
+}
