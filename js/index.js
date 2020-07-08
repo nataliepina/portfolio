@@ -36,5 +36,14 @@ anime.timeline({loop: true})
 function darkMode() {
   const element = document.body;
   element.classList.toggle("dark-mode");
-  //const btn = document.getElementsByClassName(".dark-mode-btn");
+
 }
+
+const button = document.querySelector('.dark-mode-btn');
+button.addEventListener('click', function (event) {
+  if (button.innerHTML == "🌙") {
+      button.innerHTML = "🔆";
+  } else {
+      button.innerHTML = "🌙";
+  }
+});

@@ -49,8 +49,8 @@ body {
 }
 
 .dark-mode {
-  background-color: black;
-  color: white;
+  background-color: #0b0b0c;
+  color: var(--clr-light);
 
   --clr-accent: #664e8d;
 }
@@ -64,7 +64,11 @@ body {
   border: none;
   background: transparent;
   color: black;
-  padding: 0 1.5em;
+  padding: 1em 2em;
+}
+
+.dark-mode-btn:focus {
+  outline: none;
 }
 
 /* .dark-mode-btn:hover {
@@ -128,9 +132,14 @@ h3 { font-size: var(--fs-h3)!important }
   padding: 1em;
 }
 
-.logo {
+.logo-container {
   margin-top: -10px;
-  width: 75px;
+
+  display: flex;
+}
+
+.logo {
+  width: auto;
   height: 75px;
 }
 

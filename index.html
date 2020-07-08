@@ -13,8 +13,11 @@
 </head>
 <body>
   <header class="header">
-    <div class="logo">
-      <img src="img/logo_geometric.png" alt="logo">
+    <div class="logo-container">
+      <img class="logo" src="img/logo_geometric.png" alt="logo">
+      <div class="dark-mode-container">
+        <button class="dark-mode-btn" onclick="darkMode()">🌙</button>
+      </div>    
     </div>
     <button class="nav-toggle" aria-label="toggle navigation">
       <span class="hamburger"></span>
@@ -29,9 +32,6 @@
       </ul>
     </nav>
   </header>
-  <div class="dark-mode-container">
-    <button class="dark-mode-btn" onclick="darkMode()">🌙</button>
-  </div>
 
   <section class="intro" id="home">
     <h1 class="section__title section__title--intro">
