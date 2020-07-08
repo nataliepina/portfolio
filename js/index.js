@@ -31,14 +31,13 @@ anime.timeline({loop: true})
   });
 
 
-// Dark mode
-
+// Dark Mode Theme
 function darkMode() {
   const element = document.body;
   element.classList.toggle("dark-mode");
-
 }
 
+// Toggle Dark Mode Button Text
 const button = document.querySelector('.dark-mode-btn');
 button.addEventListener('click', function (event) {
   if (button.innerHTML == "🌙") {
