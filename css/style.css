@@ -462,7 +462,51 @@ h3 { font-size: var(--fs-h3)!important }
   text-align: center;
 }
 
-.portfolio {
+.card {
+  background-color: dodgerblue;
+  padding: 1rem;
+  height: 15rem;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.card:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+
+.img-1 {
+  background-image: url('../img/long-nexthome1.jpg');
+}
+
+.img-2 {
+  background-image: url('../img/growersbrains.jpg');
+}
+
+.img-3 {
+  background-image: url('../img/portfolio-ITN.jpg');
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+
+/* .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
@@ -502,7 +546,7 @@ h3 { font-size: var(--fs-h3)!important }
 .portfolio__link:hover {
   text-decoration: underline;
   opacity: .7;
-}
+} */
 
 /* Footer */
 
