@@ -1,0 +1,18 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<line x1="41.5115" y1="143.316" x2="260.512" y2="10.3159" stroke="#B589ED" stroke-width="25"/>
+<line x1="247.424" y1="10.2771" x2="469.424" y2="143.277" stroke="#B589ED" stroke-width="25"/>
+<line x1="46.5" y1="133" x2="46.5" y2="387" stroke="#B589ED" stroke-width="25"/>
+<line x1="40.1329" y1="376.108" x2="262.133" y2="501.108" stroke="#B589ED" stroke-width="25"/>
+<line x1="249.867" y1="501.108" x2="471.867" y2="376.108" stroke="#B589ED" stroke-width="25"/>
+<line x1="464.5" y1="384.948" x2="465.555" y2="132.948" stroke="#B589ED" stroke-width="25"/>
+<line x1="157.5" y1="154" x2="157.5" y2="373" stroke="#B589ED" stroke-width="25"/>
+<line x1="160.5" y1="162.254" x2="345.5" y2="365.254" stroke="#B589ED" stroke-width="23"/>
+<line x1="349.5" y1="154" x2="349.5" y2="373" stroke="#B589ED" stroke-width="25"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
