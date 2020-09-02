@@ -49,10 +49,10 @@ body {
 }
 
 .dark-mode {
-  background-color: #0b0b0c;
+  background-color: #08060c;
   color: var(--clr-light);
 
-  --clr-accent: #664e8d;
+  --clr-accent: #43335e;
 }
 
 .dark-mode-container {
@@ -63,7 +63,7 @@ body {
 .dark-mode-btn {
   border: none;
   background: transparent;
-  color: black;
+  color: var(--clr-dark);
   padding: 1em 2em;
 }
 
@@ -71,9 +71,14 @@ body {
   outline: none;
 }
 
-/* .dark-mode-btn:hover {
-  
-} */
+.dark-mode .footer {
+  background: #08060c;
+  color: var(--clr-light);
+}
+
+.dark-mode .btn {
+  color: var(--clr-light);
+}
 
 
 section {
