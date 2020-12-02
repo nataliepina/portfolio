@@ -39,10 +39,3 @@ function darkMode() {
 
 // Toggle Dark Mode Button Text
 const button = document.querySelector('.dark-mode-btn');
-button.addEventListener('click', function (event) {
-  if (button.innerHTML == "🌙") {
-      button.innerHTML = "🔆";
-  } else {
-      button.innerHTML = "🌙";
-  }
-});
