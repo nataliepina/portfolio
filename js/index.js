@@ -37,5 +37,5 @@ function darkMode() {
   element.classList.toggle("dark-mode");
 }
 
-// Toggle Dark Mode Button Text
+// Toggle Dark Mode
 const button = document.querySelector('.dark-mode-btn');
