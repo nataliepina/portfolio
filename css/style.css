@@ -125,8 +125,16 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-  content: " 🌙  ";
-  padding: 3px;
+  content: "☁️";
+  padding: 6px;
+  font-size: 13px;
+  background-color: skyblue;
+  transition: .3s linear;
+}
+
+input:checked + .slider:before {
+  content: "🌙 ";
+  transition: .3s linear;
 }
 
 section {
