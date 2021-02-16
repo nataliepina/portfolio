@@ -445,7 +445,7 @@ h3 { font-size: var(--fs-h3)!important }
   color: var(--clr-accent);
   position: relative;
 }
-
+/* 
 .section__title--services::after {
   content: '';
   display: block;
@@ -454,7 +454,7 @@ h3 { font-size: var(--fs-h3)!important }
   margin: 0.5em auto 1em;
   background: var(--clr-light);
   opacity: 0.25;
-}
+} */
 
 .services {
   margin-bottom: 4em;
@@ -547,16 +547,21 @@ h3 { font-size: var(--fs-h3)!important }
   cursor: pointer;
 }
 
-
 .img-1 {
+  border: 2px solid var(--clr-accent);
+  border-radius: 2px;
   background-image: url('../img/long-nexthome1.jpg');
 }
 
 .img-2 {
+  border: 2px solid var(--clr-accent);
+  border-radius: 2px;
   background-image: url('../img/stoic.png');
 }
 
 .img-3 {
+  border: 2px solid var(--clr-accent);
+  border-radius: 2px;
   background-image: url('../img/portfolio-ITN.jpg');
 }
 
