@@ -12,135 +12,142 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="logo-container">
-      <img class="logo" src="img/Logo_New.svg" alt="logo">
-      <div class="dark-mode-container">
-      <label class="switch">
-        <input type="checkbox" checked>
-        <span class="slider round" onclick="darkMode()"></span>
-      </label> 
-      </div> 
-    </div>
-    <button class="nav-toggle" aria-label="toggle navigation">
-      <span class="hamburger"></span>
-    </button>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="https://nataliedev.netlify.app/" class="nav__link">Blog</a></li>
-        <li class="nav__item"><a href="#services" class="nav__link">My Skills</a></li>
-        <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-        <li class="nav__item"><a href="#footer" class="nav__link">Contact</a></li>
+  <input type="checkbox" class="theme-switch" id="theme-switch" />
+  <div id="page">
+    <div class="content">
+    <label for="theme-switch" class="theme-label" ></label>
+    <header class="header">
+      <div class="logo-container">
+        <img class="logo" src="img/Logo_New.svg" alt="logo">
+        <div class="dark-mode-container">
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round" onclick="darkMode()"></span>
+        </label> 
+        </div> 
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="https://nataliedev.netlify.app/" class="nav__link">Blog</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">My Skills</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#footer" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I'm <strong>Natalie</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Nice to Meet You!</p>
+      <img src="img/headshot.jpg" alt="a self portrait of natalie" class="intro__img">
+    </section>
+
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3 class="">HTML/CSS</h3>
+          <p>Up-to-date semantic markup with HTML5 features. CSS3 and CSS pre-processors. Avid Flexbox and Grid user. Responsiveness across devices. Cross browser development. Ligthouse and Axe approved.</p>
+        </div>
+
+        <div class="service">
+          <h3 class="">JavaScript</h3>
+          <p>Fundamentals and core concepts. The good parts and the weird parts. Functional and OOP. Frameworks such as React. Node as a package manager. Interacting with RESTful APIs and mocking data. Testing with Jest, Enzyme and Cypress.</p>
+        </div>
+
+        <div class="service">
+          <h3 class="">Web & App Development</h3>
+          <p>UX/UI Design in Figma and Sketch. Responsiveness and accessibility in mind. Optimized for speed. Git and version control systems. Testing and debugging.</p>
+        </div>
+      </div>
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about"><span>Front End / UI Engineer</span></p>
+
+      <div class="about-me__body">
+        <p>From photographer to programmer. I am a fluent visual communicator. I love being able to grow with the ever-evolving tech industry. I do my best follow the latest trends while continually solidifying the fundamentals.</p>
+        <p>When I'm not programming, I enjoy hoarding house plants, hanging out with my dog, photography, comedy podcasts, exceptionally spicy food, baking, traveling, video games, trivia nights and live music.</p>
+        <p><strong>Current Location: </strong>Nashville, TN.</p>
+        <p><strong>Current Work: </strong>Software Engineer at Experian.</p>
+        <p><strong>Current Deep Dive: </strong>UI/UX design principals, React/Redux ecosystem, Webpack bundling and optimization, and performance improvements for a React, converting to TypeScript and integrating Cypress for testing.</p>      
+      </div>
+
+      <img src="img/undraw_noted_pc9f.svg" alt="natalie in front of flowers" class="about-me__img">
+      <a hr ef="https://nataliedev.netlify.app/" class="btn btn-blog">Read My Blog</a>
+    </section>
+
+      <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">Projects</h2>
+      <p class="section__subtitle section__subtitle--work">Live Demos</p>
+      
+      <div class="cards">
+        <a href="https://nataliepina.github.io/stoic-quote/">
+          <div class="card img-2"></div>
+        </a>
+        
+        <a href="https://www.itnholdings.com/">
+          <span class="sr-only">Opens in new window</span>
+          <div class="card img-3"></div>
+        </a>
+
+        <a href="https://nataliepina.github.io/real-estate/">
+          <div class="card img-1"></div>
+        </a>
+      </div>
+      <a href="https://github.com/nataliepina" class="btn btn-blog">See My Github</a>
+    </section>
+
+    <footer class="footer" id="footer">
+      <a href="mailto:natalie.a.pina@gmail.com" class="footer__link" aria-hidden="true" alt="email natalie">
+        <p class="ml6">
+          <span class="text-wrapper">
+            <span class="letters">natalie.a.pina@gmail.com</span>
+          </span>
+        </p>
+        
+      </a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://github.com/nataliepina" class="social-list__link" aria-hidden="true" target="_blank" rel="noopener" alt="go to github">
+            <span class="sr-only">Opens new window</span>
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://www.instagram.com/nataliepinaphoto/" aria-hidden="true"  class="social-list__link" target="_blank" rel="noopener" alt="go to instagram">
+            <span class="sr-only">Opens new window</span>
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://twitter.com/ui_natalie" class="social-list__link" aria-hidden="true" target="_blank" rel="noopener" alt="go to codepen">
+            <span class="sr-only">Opens new window</span>
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://www.linkedin.com/in/nataliepina" aria-hidden="true" class="social-list__link" target="_blank" rel="noopener" alt="go to LinkedIn">
+            <span class="sr-only">Opens new window</span>
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
       </ul>
-    </nav>
-  </header>
-
-  <section class="intro" id="home">
-    <h1 class="section__title section__title--intro">
-      Hi, I'm <strong>Natalie</strong>
-    </h1>
-    <p class="section__subtitle section__subtitle--intro">Nice to Meet You!</p>
-    <img src="img/headshot.jpg" alt="a self portrait of natalie" class="intro__img">
-  </section>
-
-  <section class="my-services" id="services">
-    <h2 class="section__title section__title--services">What I do</h2>
-    <div class="services">
-      <div class="service">
-        <h3 class="">HTML/CSS</h3>
-        <p>Up-to-date semantic markup with HTML5 features. CSS3 and CSS pre-processors. Avid Flexbox and Grid user. Responsiveness across devices. Cross browser development. Ligthouse and Axe approved.</p>
-      </div>
-
-      <div class="service">
-        <h3 class="">JavaScript</h3>
-        <p>Fundamentals and core concepts. The good parts and the weird parts. Functional and OOP. Frameworks such as React. Node as a package manager. Interacting with RESTful APIs and mocking data. Testing with Jest, Enzyme and Cypress.</p>
-      </div>
-
-      <div class="service">
-        <h3 class="">Web & App Development</h3>
-        <p>UX/UI Design in Figma and Sketch. Responsiveness and accessibility in mind. Optimized for speed. Git and version control systems. Testing and debugging.</p>
-      </div>
+      <span class="copyright">Natalie Pina &copy;2021 made with HTML, CSS, JavaScript and &hearts; </span>
+    </footer>
     </div>
-    <a href="#work" class="btn">My Work</a>
-  </section>
-
-  <section class="about-me" id="about">
-    <h2 class="section__title section__title--about">Who I am</h2>
-    <p class="section__subtitle section__subtitle--about"><span>Front End / UI Engineer</span></p>
-
-    <div class="about-me__body">
-      <p>From photography to programming. I am a fluent visual communicator. I love being able to grow with the ever-evolving tech industry. I do my best follow the latest trends while continually solidifying the fundamentals. Crafting aesthetically pleasing designs that are responsive and intuitive is my goal.</p>
-      <p>When I'm not programming, I enjoy hoarding house plants, hanging out with my dog, photography, comedy podcasts, exceptionally spicy food, baking, traveling, video games, trivia nights and live music.</p>
-      <p><strong>Current Location: </strong>Nashville, TN.</p>
-      <p><strong>Current Work: </strong>Software Engineer at Experian.</p>
-      <p><strong>Current Deep Dive: </strong>UI/UX Design Principals, React/Redux Ecosystem, Webpack Bundling and Optimization, and performance improvements for a React Boilerplate Codebase.</p>
-    </div>
-
-    <img src="img/undraw_noted_pc9f.svg" alt="natalie in front of flowers" class="about-me__img">
-  </section>
-
-    <!-- My Work -->
-  <section class="my-work" id="work">
-    <h2 class="section__title section__title--work">Projects</h2>
-    <p class="section__subtitle section__subtitle--work">Samples of My Work</p>
-    
-    <div class="cards">
-      <a href="https://nataliepina.github.io/stoic-quote/">
-        <div class="card img-2"></div>
-      </a>
-      
-      <a href="https://www.itnholdings.com/">
-        <span class="sr-only">Opens in new window</span>
-        <div class="card img-3"></div>
-      </a>
-
-      <a href="https://nataliepina.github.io/real-estate/">
-        <div class="card img-1"></div>
-      </a>
-    </div>
-    <a href="https://nataliedev.netlify.app/" class="btn btn-blog">Read My Blog</a>
-  </section>
-
-  <footer class="footer" id="footer">
-    <a href="mailto:natalie.a.pina@gmail.com" class="footer__link" aria-hidden="true" alt="email natalie">
-      <p class="ml6">
-        <span class="text-wrapper">
-          <span class="letters">natalie.a.pina@gmail.com</span>
-        </span>
-      </p>
-      
-    </a>
-    <ul class="social-list">
-      <li class="social-list__item">
-        <a href="https://github.com/nataliepina" class="social-list__link" aria-hidden="true" target="_blank" rel="noopener" alt="go to github">
-          <span class="sr-only">Opens new window</span>
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a href="https://www.instagram.com/nataliepinaphoto/" aria-hidden="true"  class="social-list__link" target="_blank" rel="noopener" alt="go to instagram">
-          <span class="sr-only">Opens new window</span>
-          <i class="fab fa-instagram"></i>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a href="https://twitter.com/ui_natalie" class="social-list__link" aria-hidden="true" target="_blank" rel="noopener" alt="go to codepen">
-          <span class="sr-only">Opens new window</span>
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a href="https://www.linkedin.com/in/nataliepina" aria-hidden="true" class="social-list__link" target="_blank" rel="noopener" alt="go to LinkedIn">
-          <span class="sr-only">Opens new window</span>
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </li>
-    </ul>
-    <span class="copyright">Natalie Pina &copy;2021 made with HTML, CSS, JavaScript and &hearts; </span>
-  </footer>
-
+  </div>
   <script src="js/index.js"></script>
+
 </body>
 </html>

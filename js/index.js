@@ -39,3 +39,35 @@ function darkMode() {
 
 // Toggle Dark Mode
 const button = document.querySelector('.dark-mode-btn');
+
+
+// Sakura Theme Functionality 
+
+// This is used to remember the theme selected
+const themeSwitch = document.querySelector('.theme-switch');
+themeSwitch.checked = localStorage.getItem('switchedTheme') === 'true';
+
+themeSwitch.addEventListener('change', function(e) {
+  if (e.currentTarget.checked === true) {
+    // Add item to localStorage
+    localStorage.setItem('switchedTheme', 'true');
+    const sakura = setInterval(fallingSakura, 500)
+  } else {
+    // Remove item if theme is switched back to normal
+    localStorage.removeItem('switchedTheme');
+    clearInterval(sakura);
+  }
+});
+
+const emojis = ['🌸'];
+
+const fallingSakura = (emoji) => {
+  if(themeSwitch.checked) {
+    const fall = document.createElement("div");
+    fall.classList.add("fall")
+    fall.innerText = emojis[Math.floor(Math.random() * emojis.length)]
+    fall.style.left = Math.random() * 100 + "vw";
+    fall.style.animationDuration = "6s"
+    document.body.appendChild(fall)
+  }
+}

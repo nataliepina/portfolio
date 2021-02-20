@@ -10,12 +10,14 @@
   --fw-reg: 300;
   --fw-bold: 900;
 
+  /* Default Mode */
   --clr-light: #FCFCFC;
   --clr-med: #d3d3d3;
   --clr-dark: #121113;
   --clr-accent: #a48dc9;
   --clr-accent2: #838EC9;
   --clr-accent3: #C697C9;
+
     
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -48,11 +50,26 @@ body {
   line-height: 1.6;
 }
 
-.dark-mode {
-  background-color: #08060c;
-  color: var(--clr-light);
 
+/* Dark Mode */
+
+.content {
+  background: var(--clr-light);
+}
+
+.dark-mode {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  
   --clr-accent: #43335e;
+}
+
+.dark-mode .content{
+  background: var(--clr-dark);
+}
+
+.dark-mode .footer {
+  color: var(--clr-light);
 }
 
 .dark-mode-container {
@@ -146,6 +163,84 @@ img {
   max-width: 100%;
 }
 
+
+/* Sakura Theme */
+.theme-switch:checked ~ #page {
+  --clr-light: #f8d6e7;
+  --clr-med: #cf80a5;
+  --clr-dark: #0f0a0c;
+  --clr-accent: #ca6795;
+}
+
+/* Theme switcher */
+
+.theme-switch { 
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.theme-label {
+  top: 15px;
+  position: absolute;
+  left: 205px;
+  padding: 4px 10px;
+  border-radius: 2px;
+  background: #e0a3c0;
+  font-family: var(--ff-secondary);
+  cursor: pointer;
+}
+.theme-label::after {
+  content: "Sakura Theme 🌸";
+  padding: 0 0 0 4px;
+}
+
+.theme-label:hover {
+  background: #e283b0; 
+  transform: scale(1.1);
+}
+
+/* Sakura Animation */
+.fall {
+  position: fixed;
+  top: -1vh;
+  font-size: 2rem;
+  transform: translateY(0);
+  animation: fall 5s linear forwards;
+  font-size: 1.1em;
+  z-index: 0;
+  opacity: .8;
+}
+
+@keyframes fall {
+  to{
+    transform: translateY(101vh);
+  }
+}
+
+@media (max-width: 450px) {
+  .theme-label::after {
+    content: "🌸";
+    padding: 0 0 0;
+  }
+}
+
+.drop {
+  position: fixed;
+  top: -1vh;
+  font-size: 2rem;
+  transform: translateY(0);
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  to{
+    transform: translateY(101vh);
+  }
+}
+
 strong { font-weight: var(--fw-bold)!important }
 
 :focus {
@@ -166,6 +261,7 @@ strong { font-weight: var(--fw-bold)!important }
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
   border-radius: 2px;
+  text-align: center;
 }
 
 .btn:hover {
@@ -173,7 +269,7 @@ strong { font-weight: var(--fw-bold)!important }
 }
 
 .btn.btn-blog {
-  margin-top: 5em;
+  margin: 3em 0 0 0;
 }
 
 /* Typography */
@@ -336,6 +432,8 @@ h3 { font-size: var(--fs-h3)!important }
   border-radius: 2px;
 }
 
+
+
 /* Who I Am Animations */
 .section__subtitle.section__subtitle--about span{
   display: block;
@@ -445,16 +543,6 @@ h3 { font-size: var(--fs-h3)!important }
   color: var(--clr-accent);
   position: relative;
 }
-/* 
-.section__title--services::after {
-  content: '';
-  display: block;
-  width: 3em;
-  height: 1px;
-  margin: 0.5em auto 1em;
-  background: var(--clr-light);
-  opacity: 0.25;
-} */
 
 .services {
   margin-bottom: 4em;
