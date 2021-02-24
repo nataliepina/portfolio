@@ -59,6 +59,7 @@ themeSwitch.addEventListener('change', function(e) {
   }
 });
 
+// Additional emojis may be added to the array
 const emojis = ['🌸'];
 
 const fallingSakura = (emoji) => {
