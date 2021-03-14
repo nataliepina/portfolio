@@ -315,7 +315,7 @@ img {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .theme-label::after {
     content: "🌸";
 
@@ -686,6 +686,9 @@ img {
 }
 
 .about-me__img {
+  width: 50%;
+  margin: 0 auto;
+
   filter: grayscale(100%);
 }
 
@@ -716,6 +719,7 @@ img {
   }
 
   .about-me__img {
+    width: 100%;
     grid-area: img;
     position: relative;
     z-index: 2;
