@@ -24,7 +24,7 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,900|Source+Sans+Pro:300,600,900&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
@@ -36,12 +36,16 @@
         <h2 class="big-screen">Wow! You have a very large monitor.</h2>
       </aside>
       <div class="content">
-        <label for="theme-switch" class="btn theme-label"></label>
+        <label
+          for="theme-switch"
+          class="btn theme-label"
+          aria-label="Theme Switcher"
+        ></label>
         <header class="header">
           <div class="logo-container">
             <img class="logo" src="img/Logo_New.svg" alt="logo" />
             <div class="dark-mode-container">
-              <label class="switch">
+              <label class="switch" aria-label="Dark Mode Toggle">
                 <input type="checkbox" checked />
                 <span class="slider round" onclick="darkMode()"></span>
               </label>
@@ -168,13 +172,14 @@
               Pittsburgh, a Full Stack Web Development Bootcamp. Where I got an
               intro into many other languages, group projects and back-end
               exposure. Coming from a creative background, I have always been
-              drawn to the Front End. I love being able to paint the web with
-              CSS. The tech industry is ever-evolving and I love being able to
-              grow with it, while continually solidifying the fundamentals. I
-              write my code from a place of empathy - for future developers,
-              teammates, users, and with accessibility in mind. I also love
-              joining communities, helping new developers, and supporting
-              organizations to promote diversity in tech.
+              drawn to the Front End. I am a dark mode and theme enthusiast. I
+              love being able to paint the web with CSS. The tech industry is
+              ever-evolving and I love being able to grow with it, while
+              continually solidifying the fundamentals. I write my code from a
+              place of empathy - for future developers, teammates, users, and
+              with accessibility in mind. I also love joining communities,
+              helping new developers, and supporting organizations to promote
+              diversity in tech.
             </p>
             <p>
               When I'm not programming, I focus on my hobbies which are:
@@ -210,16 +215,25 @@
           <p class="section__subtitle section__subtitle--work">Live Demos</p>
 
           <div class="cards">
-            <a href="https://nataliepina.github.io/stoic-quote/">
+            <a
+              href="https://nataliepina.github.io/stoic-quote/"
+              aria-label="stoic quote app"
+            >
               <div class="card img-2"></div>
             </a>
 
-            <a href="https://www.itnholdings.com/">
+            <a
+              href="https://www.itnholdings.com/"
+              aria-label="INT Holdings Website"
+            >
               <span class="sr-only">Opens in new window</span>
               <div class="card img-3"></div>
             </a>
 
-            <a href="https://nataliepina.github.io/real-estate/">
+            <a
+              href="https://nataliepina.github.io/real-estate/"
+              aria-label="sample web design"
+            >
               <div class="card img-1"></div>
             </a>
           </div>
@@ -246,7 +260,6 @@
               <a
                 href="https://github.com/nataliepina"
                 class="social-list__link"
-                aria-hidden="true"
                 target="_blank"
                 rel="noopener"
                 alt="go to github"
@@ -258,7 +271,6 @@
             <li class="social-list__item">
               <a
                 href="https://www.instagram.com/nataliepinaphoto/"
-                aria-hidden="true"
                 class="social-list__link"
                 target="_blank"
                 rel="noopener"
@@ -272,7 +284,6 @@
               <a
                 href="https://twitter.com/ui_natalie"
                 class="social-list__link"
-                aria-hidden="true"
                 target="_blank"
                 rel="noopener"
                 alt="go to codepen"
@@ -284,7 +295,6 @@
             <li class="social-list__item">
               <a
                 href="https://www.linkedin.com/in/nataliepina"
-                aria-hidden="true"
                 class="social-list__link"
                 target="_blank"
                 rel="noopener"

@@ -5,12 +5,14 @@
 }
 
 :root {
+  /* Font Weight */
   --ff-primary: "Source Sans Pro", sans-serif;
   --ff-secondary: "Source Code Pro", monospace;
   --fw-reg: 300;
+  --fw-semibold: 600;
   --fw-bold: 900;
 
-  /* Default Mode */
+  /* Default Mode Theming */
   --clr-light: #fcfcfc;
   --clr-med: #d3d3d3;
   --clr-dark: #121113;
@@ -18,12 +20,14 @@
   --clr-accent2: #838ec9;
   --clr-accent3: #c697c9;
 
+  /* Font Sizes */
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-h4: 1.15rem;
   --fs-body: 1rem;
 
+  /* Box Shadow */
   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
@@ -277,7 +281,7 @@ img {
 .theme-label {
   background: #e0a3c0;
 
-  top: 15px;
+  top: 10px;
   position: absolute;
   left: 205px;
 }
@@ -354,8 +358,8 @@ img {
 }
 
 .logo {
-  width: auto;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 }
 
 .nav {
@@ -543,6 +547,10 @@ img {
 
 .intro {
   position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro__img {
@@ -686,7 +694,8 @@ img {
 }
 
 .about-me__img {
-  width: 50%;
+  width: 200px;
+  height: 200px;
   margin: 0 auto;
 
   filter: grayscale(100%);
@@ -719,7 +728,6 @@ img {
   }
 
   .about-me__img {
-    width: 100%;
     grid-area: img;
     position: relative;
     z-index: 2;
@@ -817,7 +825,8 @@ img {
 }
 
 .footer__link {
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-semibold);
+  font-size: 0.8em;
 }
 
 .social-list__link:hover {
@@ -846,6 +855,7 @@ img {
 
 .copyright {
   font-size: 12px;
+  font-weight: var(--fw-semibold);
 }
 
 /* Accessibility */
