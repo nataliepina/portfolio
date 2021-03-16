@@ -56,7 +56,7 @@ body {
   line-height: 1.6;
 }
 
-strong {
+.strong {
   font-weight: var(--fw-bold) !important;
 }
 
@@ -104,14 +104,19 @@ h3 {
   line-height: 1;
 }
 
+.content,
 h1 {
-  font-size: var(--fs-h1) !important;
+  font-size: var(--fs-h1);
 }
+
+.content,
 h2 {
-  font-size: var(--fs-h2) !important;
+  font-size: var(--fs-h2);
 }
+
+.content,
 h3 {
-  font-size: var(--fs-h3) !important;
+  font-size: var(--fs-h3);
 }
 
 /* Dark Mode */
@@ -271,7 +276,7 @@ img {
 /* Theme Toggle */
 
 .theme-switch {
-  position: absolute !important;
+  position: absolute;
   height: 1px;
   width: 1px;
   overflow: hidden;
@@ -281,7 +286,7 @@ img {
 .theme-label {
   background: #e0a3c0;
 
-  top: 10px;
+  top: 15px;
   position: absolute;
   left: 205px;
 }
@@ -600,10 +605,9 @@ img {
 
     position: relative;
     left: -1.5em;
-    width: calc(100% + 1.5em);
+    width: calc(100% + 4em);
 
     text-align: right;
-    font-size: 12px;
   }
 }
 
@@ -651,7 +655,8 @@ img {
 
   color: var(--clr-light);
   text-decoration: none;
-  font-size: var(--fs-h4) !important;
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-reg);
   text-align: left;
 }
 
@@ -691,6 +696,11 @@ img {
 .about-me {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.about-me__body {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-reg);
 }
 
 .about-me__img {
