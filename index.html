@@ -30,27 +30,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   </head>
   <body>
-    <input type="checkbox" class="theme-switch" id="theme-switch" />
     <div id="page">
       <aside>
         <h2 class="big-screen">Wow! You have a very large monitor.</h2>
       </aside>
       <div class="content">
-        <label
-          for="theme-switch"
-          class="btn theme-label"
-          aria-label="Theme Switcher"
-        ></label>
         <header class="header">
           <div class="logo-container">
             <img class="logo" src="img/Logo_New.svg" alt="logo" />
-            <div class="dark-mode-container">
-              <label class="switch" aria-label="Dark Mode Toggle">
-                <input type="checkbox" checked />
-                <span class="slider round" onclick="darkMode()"></span>
-              </label>
-            </div>
           </div>
+          <div class="dark-mode-container">
+            <label class="switch" aria-label="Dark Mode Toggle">
+              <input type="checkbox" checked />
+              <span class="slider round" onclick="darkMode()"></span>
+            </label>
+          </div>
+          <input type="checkbox" class="theme-switch" id="theme-switch" />
+          <label
+            for="theme-switch"
+            class="btn theme-label"
+            aria-label="Theme Switcher"
+          ></label>
           <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
           </button>
