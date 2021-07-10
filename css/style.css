@@ -20,6 +20,11 @@
   --clr-accent2: #838ec9;
   --clr-accent3: #c697c9;
 
+  --clr-sakura-light: #f8d6e7;
+  --clr-sakura-med: #cf80a5;
+  --clr-sakura-dark: #0f0a0c;
+  --clr-sakura-accent: #ca6795;
+
   /* Font Sizes */
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -218,7 +223,8 @@ input:checked + .slider:before {
   border-radius: 50%;
   content: "☁️";
 
-  padding: 6px;
+  /* keeps the icon centered */
+  padding: 8px;
 
   font-size: 13px;
 
@@ -267,10 +273,10 @@ img {
 /* Sakura Theme */
 
 .theme-switch:checked ~ #page {
-  --clr-light: #f8d6e7;
-  --clr-med: #cf80a5;
-  --clr-dark: #0f0a0c;
-  --clr-accent: #ca6795;
+  --clr-light: var(--clr-sakura-light);
+  --clr-med: var(--clr-sakura-med);
+  --clr-dark: var(--clr-sakura-dark);
+  --clr-accent: var(--clr-sakura-accent);
 }
 
 /* Theme Toggle */
@@ -285,10 +291,6 @@ img {
 
 .theme-label {
   background: #e0a3c0;
-  /*
-  top: 15px;
-  position: absolute;
-  left: 205px; */
 }
 
 .theme-label::after {
@@ -352,8 +354,6 @@ img {
 
 .header {
   display: flex;
-  /* justify-content: space-between; */
-  /* padding: 1em; */
   align-items: center;
   align-content: center;
   padding-top: 16px;
